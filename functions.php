@@ -83,14 +83,9 @@ add_filter('automatic_updates_is_vcs_checkout', '__return_false', 1);
 /*---------------------------------------------------------------*/
 /*---------------------- Theme Styles ---------------------------*/
 /*---------------------------------------------------------------*/
-function leafydoc_enqueue_styles() {
-	wp_enqueue_style( 'leafydoc', get_stylesheet_directory_uri() . '/style.css', array() );
+
+add_action( 'wp_enqueue_scripts', 'kadence_child_enqueue_styles', 11 );
+
+function kadence_child_enqueue_styles() {
+	wp_enqueue_style( 'leafydoc', get_stylesheet_directory_uri() . '/style.css', null, wp_get_theme()->get( 'Version' ), false );
 }
-
-add_action( 'wp_enqueue_scripts', 'leafydoc_enqueue_styles' ); 
-
-function enqueue_parent_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    }
-
-add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );

@@ -44,7 +44,7 @@ require_once LEAFYDOC_THEME_DIR . 'vendor/autoload.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 // Load includes
-require_once 'inc/palette.php';
+require_once LEAFYDOC_THEME_DIR . 'inc/palette.php';
 
 
 

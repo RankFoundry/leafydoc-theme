@@ -43,9 +43,6 @@ if (!defined('CURRENT_THEME_NAME')) {
 require_once LEAFYDOC_THEME_DIR . 'vendor/autoload.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
-// Load includes
-require_once LEAFYDOC_THEME_DIR . 'inc/palette.php';
-
 
 
 /*--------------------------------------------------------------*/

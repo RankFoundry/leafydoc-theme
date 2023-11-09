@@ -5,8 +5,7 @@ namespace RankFoundry\LeafyDOC;
 class Palette {
 
     public function __construct() {
-		add_filter('kadence_global_palette_defaults', [$this, 'leafydoc_palette_defaults'], 20);
-        d;slgkd;lgkd;f;sdkfgl;sdfkfg;lsdkfgsd;l
+		add_filter( 'kadence_global_palette_defaults', [ $this, 'leafydoc_palette_defaults' ], 20 );
 	}
 
     public function leafydoc_palette_defaults($palettes) {

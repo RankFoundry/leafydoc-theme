@@ -1,4 +1,5 @@
 <?php
+
 namespace RankFoundry\LeafyDOC;
 
 class Palette {

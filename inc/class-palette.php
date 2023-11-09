@@ -10,6 +10,8 @@
  *
  */
 
+namespace RankFoundry\LeafyDOC;
+
 class Palette {
 
     public function __construct() {
@@ -140,3 +142,5 @@ class Palette {
         return $palettes;
     }
 }
+
+new Palette();

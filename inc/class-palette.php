@@ -1,15 +1,4 @@
 <?php
-/**
- * LeafyDOC Theme
- *
- * @package   LeafyDOC_Theme
- * @link      https://rankfoundry.com
- * @copyright Copyright (C) 2021-2023, Rank Foundry LLC - support@rankfoundry.com
- * @since     1.0.0
- * @license   GPL-2.0+
- *
- */
-
 namespace RankFoundry\LeafyDOC;
 
 class Palette {
@@ -19,7 +8,7 @@ class Palette {
 		add_filter('kadence_global_palette_defaults', [$this, 'leafydoc_palette_defaults'], 20);
 	}
 
-    public function leafydoc_palette_defaults($palettes){
+    public function leafydoc_palette_defaults($palettes) {
         $palettes = '{
             "palette":[
                 {

@@ -128,7 +128,7 @@ class Palette {
                     "name":"Palette Color 9"
                 }
             ],
-            "active":"palette"}';
+            "active":"second-palette"}';
         return $palettes;
     }
 }

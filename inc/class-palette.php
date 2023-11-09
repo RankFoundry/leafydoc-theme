@@ -23,7 +23,7 @@ class Palette {
         $palettes = '{
             "palette":[
                 {
-                    "color":"#01705C",
+                    "color":"#91705C",
                     "slug":"palette1",
                     "name":"Palette Color 1"
                 },{

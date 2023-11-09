@@ -10,8 +10,6 @@
  *
  */
 
-namespace RankFoundry\LeafyDOC;
-
 class Palette {
 
     public function __construct() {

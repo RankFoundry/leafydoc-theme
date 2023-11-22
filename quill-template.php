@@ -232,7 +232,7 @@ $base64_encoded_data = base64_encode($json_data);
          isset($trackingData['utm_campaign']) ? $utm_params['utm_campaign']  = sanitize_text_field($trackingData['utm_campaign']) : false;
          isset($trackingData['utm_term']) ? $utm_params['utm_term']  = sanitize_text_field($trackingData['utm_term']) : false;
          isset($trackingData['utm_content']) ? $utm_params['utm_content']  = sanitize_text_field($trackingData['utm_content']) : false;
-	 isset($trackingData['irclickid']) ? $utm_params['irclickid']) = sanitize_text_field($trackingData['irclickid']) : false,
+	 isset($trackingData['irclickid']) ? $utm_params['irclickid'] = sanitize_text_field($trackingData['irclickid']) : false;
 		 $utm_params['cuid'] = $_COOKIE['cuid'];
 		 $utm_params['creferrer'] = $_COOKIE['creferrer'];
 		

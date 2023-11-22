@@ -15,5 +15,8 @@ A cutom WordPress theme for LeafyDOC
 
 == Changelog ==
 
+= 1.0.1 =
+* Add Quill Forms Logic
+
 = 1.0.0 =
 * Initial Release

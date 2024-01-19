@@ -95,6 +95,10 @@ function child_enqueue_assets() {
     // JS 
     wp_enqueue_script( 'leafydoc-custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', array(), 100, true );
 }
+function leafydoc_custom_styles() {
+	wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/assets/css/custom.css' );
+}
+add_action( 'wp_enqueue_scripts', 'leafydoc_custom_styles' );
 
 function custom_quill_scripts() {
 	$inline_script = <<<SCRIPT

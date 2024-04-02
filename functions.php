@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('LEAFYDOC_THEME_VERSION')) {
-    define('LEAFYDOC_THEME_VERSION', '1.0.1');
+    define('LEAFYDOC_THEME_VERSION', '1.0.4');
 }
 
 // Define theme directory path
@@ -48,7 +48,7 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 /*--------------------------------------------------------------*/
 /*------------------ Theme Update Checker ----------------------*/
 /*--------------------------------------------------------------*/
-if ( 'leafydoc' === CURRENT_THEME_NAME ) {
+if ( 'LeafyDOC' === CURRENT_THEME_NAME ) {
 	$minimalUpdateChecker = PucFactory::buildUpdateChecker(
 		'https://github.com/rankfoundry/leafydoc-theme/',
 		LEAFYDOC_THEME_DIR . '/functions.php',

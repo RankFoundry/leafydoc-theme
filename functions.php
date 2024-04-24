@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('LEAFYDOC_THEME_VERSION')) {
-    define('LEAFYDOC_THEME_VERSION', '1.0.4');
+    define('LEAFYDOC_THEME_VERSION', '1.0.5');
 }
 
 // Define theme directory path
@@ -94,11 +94,14 @@ function child_enqueue_assets() {
 
     // JS 
     wp_enqueue_script( 'leafydoc-custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', array(), 100, true );
+    wp_enqueue_script( 'leafydoc-wwbot-helper', get_stylesheet_directory_uri() . '/assets/js/wwbot-helper.js', array(), 100, true );
 }
 function leafydoc_custom_styles() {
 	wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/assets/css/custom.css' );
 }
 add_action( 'wp_enqueue_scripts', 'leafydoc_custom_styles' );
+
+
 
 function custom_quill_scripts() {
 	$inline_script = <<<SCRIPT

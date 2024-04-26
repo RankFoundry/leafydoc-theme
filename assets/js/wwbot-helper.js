@@ -1,14 +1,13 @@
 
-
-function generateString(length) {
-    const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let result = '';
-    const charactersLength = characters.length;
-    for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-}
+// function generateString(length) {
+//     const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+//     let result = '';
+//     const charactersLength = characters.length;
+//     for (let i = 0; i < length; i++) {
+//         result += characters.charAt(Math.floor(Math.random() * charactersLength));
+//     }
+//     return result;
+// }
 
 // Get a cookie
 //   const getCookie = name => {
@@ -49,15 +48,15 @@ function generateString(length) {
 //     return trackingData;
 // }
 
-const getGivenUrlParam = (paramKey) => {
-    const url = new URL(window.location.href);
-    const searchParams = new URLSearchParams(url.search);
-    let uParam = searchParams.get(paramKey);
+// const getGivenUrlParam = (paramKey) => {
+//     const url = new URL(window.location.href);
+//     const searchParams = new URLSearchParams(url.search);
+//     let uParam = searchParams.get(paramKey);
 
-    return uParam;
-}
+//     return uParam;
+// }
 
-const getOrSetCuid = () => {
+// const getOrSetCuid = () => {
     // let cuid;
 
     // cuid = getCookie('cuid');
@@ -71,9 +70,9 @@ const getOrSetCuid = () => {
     // }
 
     // return cuid;
-}
+// }
 
-const getOrSetCReferrer = () => {
+// const getOrSetCReferrer = () => {
     // let creferrer;
 
     // creferrer = getCookie('creferrer');
@@ -87,7 +86,7 @@ const getOrSetCReferrer = () => {
     // }
 
     // return creferrer;
-}
+// }
 
 // const getOrSetUtmParams = () => {
 //     let utmParams;
@@ -104,20 +103,21 @@ const getOrSetCReferrer = () => {
 // }
 
 const getUpdatedHealyLink = (healyLink) => {
-    let customUserId = getOrSetCuid();
-    let creferrer = getOrSetCReferrer();
-    // let utmParams = getOrSetUtmParams();
+    return healyLink;
+    // let customUserId = getOrSetCuid();
+    // let creferrer = getOrSetCReferrer();
+    // // let utmParams = getOrSetUtmParams();
 
-    const url = new URL(healyLink);
-    const searchParams = new URLSearchParams(url.search);
+    // const url = new URL(healyLink);
+    // const searchParams = new URLSearchParams(url.search);
 
-    searchParams.set("cuid", customUserId);
-    searchParams.set("creferrer", creferrer);
+    // searchParams.set("cuid", customUserId);
+    // searchParams.set("creferrer", creferrer);
 
-    // if(utmParams)
-    //     Object.entries(utmParams).forEach(param => {
-    //         if(!searchParams.has(param[0])) searchParams.set(param[0], param[1]);
-    //     });
+    // // if(utmParams)
+    // //     Object.entries(utmParams).forEach(param => {
+    // //         if(!searchParams.has(param[0])) searchParams.set(param[0], param[1]);
+    // //     });
     
     return `${url.origin}${url.pathname}?${searchParams.toString()}`;
 }
@@ -141,7 +141,7 @@ window.wwchatHead = `
   line-height: 20px;
 }
 .card-body {
-  background: #c9d9ca;
+  background: #e2f8f4;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -251,7 +251,7 @@ window.wwchatHead = `
         <div class="card-body">
           <div class="dr-img-wrapper">
             <img
-              src="${window.location.origin}/wp-content/themes/wellnesswag-theme/assets/images/doctor.png"
+              src="${window.location.origin}/wp-content/themes/leafydoc-theme/assets/images/doctor.png"
               alt="Dr. Chance Miller"
             />
           </div>
@@ -259,7 +259,7 @@ window.wwchatHead = `
           <div class="content">
             <div class="heading-wrapper">
               <h2>Dr. Chance Miller, MD</h2>
-              <img src="${window.location.origin}/wp-content/themes/wellnesswag-theme/assets/images/tick-badge.png" alt="badge" />
+              <img src="${window.location.origin}/wp-content/themes/leafydoc-theme/assets/images/tick-badge.png" alt="badge" />
             </div>
             <p>
               Dr. Miller is a young and energetic, open-minded physician at the
@@ -268,7 +268,7 @@ window.wwchatHead = `
           </div>
           <div class="ratings">
             <img
-              src="${window.location.origin}/wp-content/themes/wellnesswag-theme/assets/images/star.png"
+              src="${window.location.origin}/wp-content/themes/leafydoc-theme/assets/images/star.png"
               alt="stars"
             />
             <p>55,255 Satisfied Customers</p>

@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('LEAFYDOC_THEME_VERSION')) {
-    define('LEAFYDOC_THEME_VERSION', '1.0.5');
+    define('LEAFYDOC_THEME_VERSION', '1.0.6');
 }
 
 // Define theme directory path

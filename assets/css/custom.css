@@ -542,6 +542,19 @@ body.no-header.no-footer .entry-content-wrap {
   padding-bottom: 18px;
   background: #fff;
 }
+.chat-bot .chat-bot-inner-wrapper {
+  height: 100%;
+  overflow-y: scroll
+}
+
+.chat-bot .chat-bot-inner-wrapper::-webkit-scrollbar {
+  display: none
+}
+
+.chat-bot .chat-bot-inner-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none
+}
 .chat-bot > .wp-block-group__inner-container {
   max-width: 1405px;
   margin: 0px auto;

@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('LEAFYDOC_THEME_VERSION')) {
-    define('LEAFYDOC_THEME_VERSION', '1.0.6');
+    define('LEAFYDOC_THEME_VERSION', '1.0.7');
 }
 
 // Define theme directory path
@@ -38,6 +38,19 @@ if (!defined('CURRENT_THEME_NAME')) {
     $current_theme_obj = wp_get_theme();
     define('CURRENT_THEME_NAME', $current_theme_obj->get('Name'));
 }
+
+// Get current theme path in JS var
+function add_theme_path_to_js() {
+    // Get the active theme path
+    $theme_path = esc_url(get_stylesheet_directory_uri());
+
+    // Inline JavaScript to set theme path as a global variable
+    $inline_script = "window.themePath = '{$theme_path}';";
+
+    // Add inline script to the footer of the page
+    wp_add_inline_script('jquery', $inline_script, 'after');
+}
+add_action('wp_enqueue_scripts', 'add_theme_path_to_js');
 
 // Load the Composer autoloader.
 require_once LEAFYDOC_THEME_DIR . 'vendor/autoload.php';

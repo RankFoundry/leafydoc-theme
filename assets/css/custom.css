@@ -544,16 +544,16 @@ body.no-header.no-footer .entry-content-wrap {
 }
 .chat-bot .chat-bot-inner-wrapper {
   height: 100%;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 
 .chat-bot .chat-bot-inner-wrapper::-webkit-scrollbar {
-  display: none
+  display: none;
 }
 
 .chat-bot .chat-bot-inner-wrapper {
   -ms-overflow-style: none;
-  scrollbar-width: none
+  scrollbar-width: none;
 }
 .chat-bot > .wp-block-group__inner-container {
   max-width: 1405px;
@@ -647,4 +647,227 @@ body.no-header.no-footer .entry-content-wrap {
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+
+/*  medical-card-pa-wrapper */
+
+.p-relative {
+  position: relative;
+}
+/* header */
+.site-header-row-layout-fullwidth {
+  max-width: 1790px;
+  position: fixed !important;
+  width: calc(100% - 160px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 48px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.2);
+}
+.hero-image {
+  height: 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.entry-content .wp-block-group.has-background.medical-card-pa-wrapper {
+  padding: 0px 0px;
+}
+.medical-card-pa-wrapper .hero-section-wrapper .kt-row-column-wrap {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .medical-card-pa-wrapper .left-content-wrapper {
+    width: 60% !important;
+  }
+}
+
+.medical-card-pa-wrapper .kt-blocks-accordion-header:focus {
+  background: white;
+}
+
+.medical-card-pa-wrapper .about-us-image-wrapper {
+  height: 336px;
+  border-radius: 24px;
+}
+.medical-card-pa-wrapper .about-us-image-wrapper img {
+  object-fit: cover;
+  height: 336px;
+  width: 100%;
+}
+
+.medical-card-pa-wrapper .about-us > div > figure > picture > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.medical-card-pa-wrapper
+  .kt-accordion-id72457_cf8ef7-0f
+  .kt-accordion-header-wrap
+  .kt-blocks-accordion-header.kt-accordion-panel-active {
+  border-radius: 24px 24px 0px 0px;
+}
+
+.medical-card-pa-wrapper .kt-blocks-accordion-header.kt-accordion-panel-active {
+  border-radius: 24px 24px 0px 0px !important;
+}
+@media (max-width: 1536px) {
+  .site-header-row-layout-fullwidth {
+    width: calc(100% - 48px);
+  }
+}
+@media (min-width: 1280px) {
+  .medical-card-pa-wrapper .hero-section {
+    padding-top: 300px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 1280px) {
+  .medical-card-pa-wrapper .hero-section {
+    padding-top: 170px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .medical-card-pa-wrapper .hero-section {
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .medical-card-pa-wrapper .medical-card-pa-footer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+    border-top-left-radius: 24px !important;
+    border-top-right-radius: 24px !important;
+    top: 0;
+  }
+  .medical-card-pa-wrapper .hero-section-wrapper .kt-row-column-wrap {
+    flex-direction: column;
+  }
+  .medical-card-pa-wrapper .info-box-wrapper .kt-row-column-wrap {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  /* .medical-card-pa-wrapper .right-image-wrapper {
+    width: 40%;
+    height: 410px;
+  } */
+
+  .medical-card-pa-wrapper .right-image-wrapper img {
+    max-height: 410px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+  .medical-card-pa-wrapper .icon-btn > span {
+    gap: 16px !important;
+  }
+
+  @media (max-width: 1024px) {
+    .medical-card-pa-wrapper .right-image-wrapper {
+      height: 311px;
+    }
+    .medical-card-pa-wrapper .icon-btn > span {
+      gap: 8px !important;
+    }
+
+    .medical-card-pa-wrapper .right-image-wrapper img {
+      max-height: 311px;
+    }
+    .medical-card-pa-wrapper .about-us-image-wrapper {
+      border-radius: 16px !important;
+    }
+  }
+
+  .medical-card-pa-wrapper .testimonial-design {
+    border-radius: 24px;
+  }
+  .medical-card-pa-wrapper .about-us-image-wrapper {
+    height: 328px;
+  }
+  .medical-card-pa-wrapper .about-us-image-wrapper img {
+    max-height: 328px;
+  }
+  .site-header-row-layout-fullwidth {
+    margin-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .medical-card-pa-wrapper .info-box-wrapper .kt-row-column-wrap {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .medical-card-pa-wrapper .book-your-appointment .kt-row-column-wrap {
+    grid-template-columns: minmax(0, 1fr) 1fr;
+  }
+  .medical-card-pa-wrapper .about-us-image-wrapper {
+    height: 210px;
+  }
+  .medical-card-pa-wrapper .about-us-image-wrapper img {
+    max-height: 210px;
+  }
+}
+.medical-card-pa-wrapper .medical-card-pa-footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 90%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  top: 0;
+}
+
+.medical-card-pa-wrapper .info-box .kt-inside-inner-col {
+  height: 100%;
+}
+
+.medical-card-pa-header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.medical-card-pa-wrapper .ppc-banner-img-wrapper {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+}
+.medical-card-pa-wrapper .ppc-banner-img-wrapper .kt-inside-inner-col {
+  height: 100vh;
+  max-height: 1080px;
+}
+.medical-card-pa-wrapper .ppc-banner-img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.medical-card-pa-wrapper .hero-cta-btn {
+  width: 100% !important;
+}
+
+.medical-card-pa-wrapper .about-us {
+  height: 100% !important;
+}
+
+.medical-card-pa-wrapper .about-us .kt-inside-inner-col {
+  height: 100% !important;
+  justify-content: center !important;
+  display: flex !important
+;
+}
+
+.medical-card-pa-wrapper .footer-content {
+  flex: auto !important;
 }
